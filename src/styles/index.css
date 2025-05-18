@@ -1,9 +1,49 @@
 @import url("./reset.css");
 
+:root {
+  --gray-color: #f3f2f0;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+/* common */
+.btn-base {
+  background: hsla(0, 0%, 96%, 0.05);
+  border: 1px solid rgba(27, 29, 34, 0.15);
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 8px 12px;
+  position: relative;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.pd48 {
+  padding: 48px;
+}
+
+/* MainCard */
+.main-card {
+  background: #fff;
+  padding: 4px;
+}
+.main-card-header {
+  border-radius: 8px;
+  height: 40px;
+  padding: 8px;
+}
+.main-card-container {
+  background-color: var(--gray-color);
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
+.main-card-content {
+  height: 300px;
+  box-sizing: border-box;
 }

@@ -1,3 +1,9 @@
+import MainCard from "../components/MainCard";
+
 export default function Home() {
-  return <div>Project</div>;
+  return (
+    <div>
+      <MainCard />
+    </div>
+  );
 }
