@@ -1,0 +1,8 @@
+@font-face {
+  font-family: “NotoSerifKR”;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"),
+    url("../assets/fonts/NotoSerifKR-Medium.woff") format("woff"),
+    url("../assets/fonts/NotoSerifKR-Medium.otf") format("otf");
+}
