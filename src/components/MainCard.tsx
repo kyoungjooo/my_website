@@ -12,13 +12,13 @@ export default function MainCard() {
       <div className="main-card">
         <div className="main-card__inner">
           <header className="main-card__header">
-            <span className="title">PORTFOLO</span>
+            <span className="title">Project</span>
             <button className="toggle">
               <span className="sr-only">더보기</span>
             </button>
           </header>
           <div className="main-card__content" onClick={handleGoToProjectList} />
-          <footer className="main-card__footer flex-center">
+          <footer className="main-card__footer">
             <Button text="see all work" />
           </footer>
         </div>
