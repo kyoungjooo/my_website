@@ -12,7 +12,7 @@ export default function MainCard() {
       <div className="main-card">
         <div className="main-card__inner">
           <header className="main-card__header">
-            <span className="title">project</span>
+            <span className="title">PORTFOLO</span>
             <button className="toggle">
               <span className="sr-only">더보기</span>
             </button>

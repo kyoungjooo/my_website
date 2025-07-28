@@ -42,9 +42,13 @@ body {
   padding: 8px 12px;
   position: relative;
 }
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
 .card {
   background: #fff;
-  padding: 4px;
+  padding: 6px 6px 0 6px;
 }
 .card-inner {
   background-color: var(--gray-color);
@@ -76,6 +80,7 @@ body {
 .p-48 {
   padding: 48px;
 }
+/* font */
 .font-noto-serif-kr {
   font-family: "NotoSerifKR", serif;
   line-height: 1.2;

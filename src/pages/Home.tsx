@@ -2,7 +2,7 @@ import MainCard from "../components/MainCard";
 
 export default function Home() {
   return (
-    <section>
+    <section className="container">
       <MainCard />
     </section>
   );
