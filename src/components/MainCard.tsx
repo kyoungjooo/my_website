@@ -9,23 +9,19 @@ export default function MainCard() {
   };
   return (
     <Card>
-      <div className="main-card-wrapper">
-        <header className="main-card-header">
-          <div className="main-card-header-inner">
+      <div className="main-card">
+        <div className="main-card__inner">
+          <header className="main-card__header">
             <span className="title">project</span>
             <button className="toggle">
               <span className="sr-only">더보기</span>
             </button>
-          </div>
-        </header>
-        <div className="main-card-content" onClick={handleGoToProjectList}>
-          <div className="main-card-content-inner" />
+          </header>
+          <div className="main-card__content" onClick={handleGoToProjectList} />
+          <footer className="main-card__footer flex-center">
+            <Button text="see all work" />
+          </footer>
         </div>
-        <footer className="main-card-footer">
-          <div className="main-card-footer-inner">
-            <Button text="see all work" className="btn-base" />
-          </div>
-        </footer>
       </div>
     </Card>
   );
