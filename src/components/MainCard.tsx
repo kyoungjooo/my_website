@@ -1,15 +1,33 @@
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "./common/Button";
 import Card from "./common/Card";
-import project_02 from "../assets/images/project_02.png";
+import { PROJECTS } from "../constants/project";
 
 export default function MainCard() {
   const navigate = useNavigate();
-  const handleGoToProjectList = () => {
-    navigate("/project");
-  };
+  const handleGoToProjectList = () => navigate("/project");
+  const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const PROJECTS = [{ name: "스마트보장분석", image: project_02 }];
+  const currentProject = PROJECTS[currentProjectIndex];
+  const imageList = currentProject.image;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => {
+        // 마지막 이미지면 다음 프로젝트로
+        if (prev + 1 >= imageList.length) {
+          const nextProjectIndex = (currentProjectIndex + 1) % PROJECTS.length;
+          setCurrentProjectIndex(nextProjectIndex);
+          return 0;
+        }
+        return prev + 1;
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [currentProjectIndex, imageList.length]);
+
   return (
     <Card>
       <div className="main-card">
@@ -24,11 +42,16 @@ export default function MainCard() {
             className="main-card__content flex-center"
             onClick={handleGoToProjectList}
           >
-            <img src={PROJECTS[0].image} alt="" className="h-full" />
+            <img src={imageList[currentImageIndex]} alt="" className="h-full" />
           </div>
           <footer className="main-card__footer">
-            <p className="px-12">{PROJECTS[0].name}</p>
-            <Button text="see all work" onClick={handleGoToProjectList} />
+            <span className="name">{currentProject.name}</span>
+            <div>
+              <span className="count">
+                {currentProjectIndex + 1} / {PROJECTS.length}
+              </span>
+              <Button text="see all work" onClick={handleGoToProjectList} />
+            </div>
           </footer>
         </div>
       </div>

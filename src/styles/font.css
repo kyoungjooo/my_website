@@ -2,7 +2,19 @@
   font-family: “NotoSerifKR”;
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"),
-    url("../assets/fonts/NotoSerifKR-Medium.woff") format("woff"),
-    url("../assets/fonts/NotoSerifKR-Medium.otf") format("otf");
+  src: url("/public/assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"),
+    url("/public/assets/fonts/NotoSerifKR-Medium.woff") format("woff"),
+    url("/public/assets/fonts/NotoSerifKR-Medium.otf") format("otf");
+}
+@font-face {
+  font-family: “DIN”;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/public/assets/fonts/D-DIN.otf") format("otf");
+}
+@font-face {
+  font-family: “DIN”;
+  font-style: normal;
+  font-weight: 600;
+  src: url("/public/assets/fonts/D-DIN-Bold.otf") format("otf");
 }
