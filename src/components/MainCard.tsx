@@ -9,7 +9,6 @@ export default function MainCard() {
   const handleGoToProjectList = () => navigate("/project");
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   const currentProject = PROJECTS[currentProjectIndex];
   const imageList = currentProject.image;
 

@@ -219,14 +219,7 @@ body {
 .project-card__image-wrapper {
   height: 200px;
 }
-.project-card__image-wrapper .image {
-  height: 100%;
-  width: 100%;
-  background-color: #fff;
-}
-.project-card__content {
-  padding-bottom: 24px;
-}
-.project-card__footer {
-  padding-bottom: 24px;
+.project-card__content .skills {
+  display: flex;
+  gap: 4px;
 }
