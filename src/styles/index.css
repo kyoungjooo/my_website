@@ -45,6 +45,12 @@ body {
   padding: 8px 12px;
   position: relative;
 }
+.tag.active {
+  background-color: #888a86;
+  border: 1px solid #888a86;
+  color: #fff;
+}
+
 .container {
   max-width: 640px;
   margin: 0 auto;
@@ -219,7 +225,14 @@ body {
 .project-card__image-wrapper {
   height: 200px;
 }
+.project-card__content {
+  font-size: 15px;
+  font-weight: 600;
+}
 .project-card__content .skills {
   display: flex;
-  gap: 4px;
+  gap: 6px;
+  margin-top: 2px;
+  margin-left: 1px;
+  color: #888a86;
 }

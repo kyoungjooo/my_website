@@ -33,17 +33,20 @@ export const PROJECTLIST = [
     skills: ["HTML", "CSS", "JavaScript(ES6+)"],
     image: "/assets/images/project/ez.png",
     slug: "ez",
+    tab: "Project",
   },
   {
     title: "신한라이프 스마트보장분석 개발고도화",
     skills: ["HTML", "CSS", "JavaScript(ES6+)"],
     image: "/assets/images/project/life.png",
     slug: "life",
+    tab: "Project",
   },
   {
     title: "널리 (Neurly)",
     skills: ["Next.js", "Tailwind CSS v4"],
     image: "/assets/images/project/neurly.png",
     slug: "neurly",
+    tab: "Side Project",
   },
 ];

@@ -18,9 +18,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card>
       <div className="project-card">
-        <div className="project-card__inner p-24">
+        <div
+          className="project-card__inner p-24"
+          onClick={handleGoToProjectDetail}
+        >
           <div className="project-card__content">
-            <span>{title}</span>
+            <span className="title">{title}</span>
             <ul className="text-14 skills">
               {skills.map((skill, idx) => (
                 <li key={idx}>{skill}</li>
@@ -32,11 +35,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </div>
 
           <div className="project-card__footer">
-            <Button
-              text="See more"
-              className="w-full"
-              onClick={handleGoToProjectDetail}
-            />
+            <Button text="See more" className="w-full" />
           </div>
         </div>
       </div>

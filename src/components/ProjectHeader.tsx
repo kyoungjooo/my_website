@@ -1,7 +1,23 @@
+import { Dispatch, MouseEvent, SetStateAction } from "react";
 import Button from "./common/Button";
 import Card from "./common/Card";
 
-export default function ProjectHeader() {
+type ProjectHeaderProps = {
+  currentTab: string;
+  setCurrentTab: Dispatch<SetStateAction<string>>;
+};
+const TABS = ["All", "Project", "Side Project"];
+
+export default function ProjectHeader({
+  currentTab,
+  setCurrentTab,
+}: ProjectHeaderProps) {
+  const handleSetCurrentTab = (e: MouseEvent<HTMLDivElement>) => {
+    const target = e.target as HTMLElement;
+    const selectedTab = target.textContent;
+    if (selectedTab) setCurrentTab(selectedTab);
+  };
+
   return (
     <Card>
       <div className="project-header">
@@ -14,13 +30,17 @@ export default function ProjectHeader() {
           </div>
           <div className="project-header__tabs">
             <p className="text-14 text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              ipsa mollitia quos reiciendis sequi commodi asperiores hic eius,
+              2023년부터 UI 화면을 개발하는 일을 해왔습니다.
+              <br /> 단순히 "이렇게 만들면 되겠지"가 아니라, 디자이너와
+              기획자와의 소통을 통해 의도를 이해하고 아름답고 완성도 높은 UI를
+              구현하는 데 가치를 두고 있습니다.
             </p>
-            <div className="tabs">
-              <Button text="All" className="tag" />
-              <Button text="Project" className="tag" />
-              <Button text="Side Project" className="tag" />
+            <div className="tabs" onClick={handleSetCurrentTab}>
+              {TABS.map((tab) => {
+                const isActive = currentTab === tab;
+                const className = `tag ${isActive ? "active" : ""}`;
+                return <Button key={tab} text={tab} className={className} />;
+              })}
             </div>
           </div>
         </div>
