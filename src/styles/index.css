@@ -11,7 +11,7 @@ body {
   font-family: "font-din";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 1.5;
+  line-height: 1.8;
   font-variant-numeric: tabular-nums;
   height: 100vh;
   color: rgba(27, 29, 34, 0.825);
@@ -52,7 +52,7 @@ body {
 }
 
 .container {
-  max-width: 640px;
+  max-width: 840px;
   margin: 0 auto;
   height: 100%;
 }
@@ -107,14 +107,23 @@ body {
 .font-din {
   font-family: "DIN", sans-serif;
 }
+.text-12 {
+  font-size: 12px;
+}
+.text-14 {
+  font-size: 14px;
+}
+.text-18 {
+  font-size: 18px;
+}
 .text-32 {
   font-size: 32px;
 }
 .text-36 {
   font-size: 36px;
 }
-.text-14 {
-  font-size: 14px;
+.bold {
+  font-weight: 600;
 }
 
 /* Home ----- MainCard */
@@ -172,7 +181,9 @@ body {
 }
 .main-card__content {
   padding: 48px;
-  height: 300px;
+  aspect-ratio: 1.5 / 1;
+  max-height: 400px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 .main-card__footer {
@@ -191,7 +202,6 @@ body {
 
 /* Project ----- ProjectHeader */
 .project-header__inner {
-  height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -213,6 +223,7 @@ body {
 }
 .project-header__tabs .text {
   position: relative;
+  margin-top: 16px;
   left: 3px;
 }
 .project-header__tabs .tabs {
@@ -223,7 +234,9 @@ body {
 
 /* Project ----- ProjectCard */
 .project-card__image-wrapper {
-  height: 200px;
+  aspect-ratio: 1.5 / 1;
+  max-height: 400px;
+  margin: 0 auto;
 }
 .project-card__content {
   font-size: 15px;
@@ -235,4 +248,20 @@ body {
   margin-top: 2px;
   margin-left: 1px;
   color: #888a86;
+}
+
+/* Project ----- ProjectDetail */
+.project-detail__inner {
+  padding-top: 24px;
+}
+.project-detail__desc .detail {
+  margin-bottom: 24px;
+}
+.project-detail__desc .title {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.project-detail__header .meta {
+  display: flex;
+  gap: 8px;
 }
