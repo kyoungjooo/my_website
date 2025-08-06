@@ -1,3 +1,5 @@
+import { TPROJECTDETAIL } from "../models/project";
+
 // 메인 페이지
 export const PROJECTS = [
   {
@@ -50,3 +52,36 @@ export const PROJECTLIST = [
     tab: "Side Project",
   },
 ];
+
+//프로젝트 상세 페이지
+export const PROJECTDETAIL: Record<string, TPROJECTDETAIL> = {
+  ez: {
+    title: "신한 EZ 손해보험 보험 가입 웹 페이지",
+    role: "퍼블리싱 기여도 100%",
+    period: "2023.06 ~ 2023.11 ",
+    source: "/assets/images/project/ez.mp4",
+    detail:
+      "기아멤버스, 현대캐피탈, 신한 SOL 등 다양한 채널에서 운영된 이벤트성 보험 가입 페이지로, 현재는 서비스가 종료된 프로젝트입니다. 모바일 및 데스크탑 환경에 대응하는 반응형 웹 퍼블리싱과 다양한 브라우저에서 일관된 UI/UX를 구현하기 위한 크로스 브라우징 작업을 담당했습니다.",
+    works: [
+      "모바일, 태블릿, 데스크탑 환경 대응 반응형 웹 퍼블리싱",
+      "다양한 브라우저 환경에 대응하는 크로스 브라우징 작업",
+      "인터랙션 및 모션 구현을 위한 애니메이션 표현을 위한 Lottie 활용",
+      "디자이너, 백엔드 개발자와의 협업을 통해 개발 환경에서 발생하는 문제를 함께 해결",
+    ],
+    live: "",
+  },
+  life: {
+    title: "신한라이프 스마트보장분석 개발고도화",
+    role: "퍼블리싱 기여도 PC, mobile 100%, tablet 일부",
+    period: "2024.01 ~ 2024.07",
+    source: "/assets/images/project/life.mp4",
+    detail:
+      "보험 설계사 FC 전용 고객 관리 및 상품 조회 웹페이지의 반응형 UI(모바일, 태블릿, 데스크탑)를 구현하였으며, 퍼블리싱부터 사용자 인터랙션을 포함한 동적 기능까지 대부분의 화면 개발을 담당했습니다. 애자일 방식으로 기획자, 디자이너, 개발자와 협업을 통해 비즈니스 요구사항이 수시로 바뀌는 환경에서도 일정 내 안정적으로 기능을 구현해 프로젝트의 완성도를 높였습니다.",
+    works: [
+      "모바일, 태블릿, 데스크탑 환경 대응 반응형 웹 퍼블리싱",
+      "다양한 브라우저 환경에 대응하는 크로스 브라우징 작업",
+      "자동 무한 슬라이드 배너, 탭 UI 등 사용자 인터랙션 중심의 동적 기능 구현",
+    ],
+    live: "https://smart.shinhanlife.co.kr/adminLogin.do",
+  },
+};

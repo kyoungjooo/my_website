@@ -1,6 +1,6 @@
+import { useNavigate } from "react-router-dom";
 import Button from "./common/Button";
 import Card from "./common/Card";
-import { useNavigate } from "react-router-dom";
 
 type ProjectCardProps = {
   project: {
@@ -10,6 +10,7 @@ type ProjectCardProps = {
     slug: string;
   };
 };
+
 export default function ProjectCard({ project }: ProjectCardProps) {
   const { title, skills, image, slug } = project;
   const navigate = useNavigate();

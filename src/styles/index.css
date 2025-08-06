@@ -37,6 +37,10 @@ body {
   padding: 8px 12px;
   position: relative;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn-base:hover {
+  background: #fff;
 }
 .tag {
   border: 1px solid rgba(27, 29, 34, 0.1);
@@ -44,6 +48,9 @@ body {
   cursor: pointer;
   padding: 8px 12px;
   position: relative;
+}
+.tag:hover {
+  background: transparent;
 }
 .tag.active {
   background-color: #888a86;
@@ -66,6 +73,7 @@ body {
   position: relative;
   z-index: 1;
 }
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -85,7 +93,6 @@ body {
 .px-12 {
   padding: 0 12px;
 }
-
 .p-24 {
   padding: 24px;
 }
@@ -185,6 +192,7 @@ body {
   max-height: 400px;
   margin: 0 auto;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .main-card__footer {
   display: flex;
@@ -237,6 +245,7 @@ body {
   aspect-ratio: 1.5 / 1;
   max-height: 400px;
   margin: 0 auto;
+  cursor: pointer;
 }
 .project-card__content {
   font-size: 15px;
@@ -251,17 +260,25 @@ body {
 }
 
 /* Project ----- ProjectDetail */
-.project-detail__inner {
-  padding-top: 24px;
-}
-.project-detail__desc .detail {
-  margin-bottom: 24px;
+
+.project-detail__desc .work {
+  margin: 24px 0;
 }
 .project-detail__desc .title {
   display: inline-block;
   margin-bottom: 4px;
 }
+.project-detail__desc .live {
+  display: flex;
+  flex-direction: column;
+}
+.project-detail__desc .live .link {
+  color: #888a86;
+}
 .project-detail__header .meta {
   display: flex;
+  flex-direction: column;
+  line-height: 1;
   gap: 8px;
+  margin-top: 8px;
 }

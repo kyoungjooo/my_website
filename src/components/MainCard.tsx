@@ -23,7 +23,7 @@ export default function MainCard() {
         }
         return prev + 1;
       });
-    }, 1000);
+    }, 500);
     return () => clearInterval(interval);
   }, [currentProjectIndex, imageList.length]);
 
