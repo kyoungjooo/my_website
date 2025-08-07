@@ -3,6 +3,7 @@
 
 :root {
   --gray-color: #f3f2f0;
+  --black-color: rgba(27, 29, 34, 0.825);
 }
 #root {
   height: 100%;
@@ -14,10 +15,8 @@ body {
   line-height: 1.8;
   font-variant-numeric: tabular-nums;
   height: 100vh;
-  color: rgba(27, 29, 34, 0.825);
+  color: var(--black-color);
 }
-
-/* common */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -29,6 +28,8 @@ body {
   white-space: nowrap;
   border: 0;
 }
+
+/* common */
 .btn-base {
   background: hsla(0, 0%, 96%, 0.05);
   border: 1px solid rgba(27, 29, 34, 0.15);
@@ -37,7 +38,9 @@ body {
   padding: 8px 12px;
   position: relative;
   cursor: pointer;
+  font-size: 14px;
   transition: all 0.2s ease-in-out;
+  font-family: "font-din";
 }
 .btn-base:hover {
   background: #fff;
@@ -57,11 +60,13 @@ body {
   border: 1px solid #888a86;
   color: #fff;
 }
-
-.container {
+.wrapper {
   max-width: 840px;
   margin: 0 auto;
   height: 100%;
+}
+.container {
+  padding-bottom: 48px;
 }
 .card {
   background: #fff;
@@ -73,7 +78,7 @@ body {
   position: relative;
   z-index: 1;
 }
-
+/* center */
 .flex-center {
   display: flex;
   align-items: center;
@@ -84,6 +89,7 @@ body {
 .w-full {
   width: 100%;
 }
+
 /* height */
 .h-full {
   height: 100%;
@@ -130,6 +136,34 @@ body {
   font-size: 36px;
 }
 .bold {
+  font-weight: 600;
+}
+
+/* Nav ---- Navigation */
+.navigation {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 48px;
+  background: #fff;
+  z-index: 1;
+  max-width: 840px;
+}
+.navigation__inner {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.navigation__links {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation__links a {
+  text-decoration: none;
+  color: var(--black-color);
+  line-height: 1;
   font-weight: 600;
 }
 

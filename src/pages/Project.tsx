@@ -9,11 +9,11 @@ export default function Project() {
     currentTab === "All" ? true : project.tab === currentTab
   );
   return (
-    <section className="container">
+    <>
       <ProjectHeader currentTab={currentTab} setCurrentTab={setCurrentTab} />
       {filteredProjects.map((project) => (
         <ProjectCard key={project.title} project={project} />
       ))}
-    </section>
+    </>
   );
 }

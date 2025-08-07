@@ -11,7 +11,7 @@ export default function ProjectDetail() {
   const { title, role, period, source, detail, works, live } = currentProject;
 
   return (
-    <section className="container">
+    <>
       <div className="project-detail">
         <div className="project-detail__inner py-24">
           <div className="project-detail__header px-24">
@@ -26,7 +26,6 @@ export default function ProjectDetail() {
             src={source}
             autoPlay
             muted
-            loop
             preload="auto"
             controls
           />
@@ -59,6 +58,6 @@ export default function ProjectDetail() {
           </div>
         </div>
       </div>
-    </section>
+    </>
   );
 }

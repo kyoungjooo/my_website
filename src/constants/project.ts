@@ -46,7 +46,7 @@ export const PROJECTLIST = [
   },
   {
     title: "널리 (Neurly)",
-    skills: ["Next.js", "Tailwind CSS v4"],
+    skills: ["Next.js(App Router)", "TypeScript", "Tailwind CSS v4"],
     image: "/assets/images/project/neurly.png",
     slug: "neurly",
     tab: "Side Project",
@@ -83,5 +83,22 @@ export const PROJECTDETAIL: Record<string, TPROJECTDETAIL> = {
       "자동 무한 슬라이드 배너, 탭 UI 등 사용자 인터랙션 중심의 동적 기능 구현",
     ],
     live: "https://smart.shinhanlife.co.kr/adminLogin.do",
+  },
+  neurly: {
+    title: "널리 (Neurly)",
+    role: "퍼블리싱 기여도 100%, 프론트 개발",
+    period: "2025.05",
+    source: "/assets/images/project/neurly.mp4",
+    detail:
+      "기획자, 디자이너, 개발자가 협업하여 진행한 웹 프로젝트로, 대선 후보자의 핵심 공약을 정리하여 전달하고 사용자가 밈 기반 공유 기능을 통해 친구들과 쉽게 공약을 공유할 수 있도록 기획되었습니다.",
+    works: [
+      "반응형 UI 화면 퍼블리싱",
+      "공통 디자인 컴포넌트 설계 및 구현",
+      "공통 로직 분리를 위한 커스텀 훅 생성 및 적용",
+      "Context API를 활용한 전역 상태 관리 구조 설계",
+      "카카오톡 공유 기능 연동",
+      "API 연동 및 비동기 처리 로직 구현",
+    ],
+    live: "https://leginote.net/",
   },
 };

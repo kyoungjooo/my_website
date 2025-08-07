@@ -8,15 +8,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     Component: App,
-    children: [{ index: true, Component: Home }],
-  },
-  {
-    path: "project",
-    Component: Project,
-  },
-  {
-    path: "project/:id",
-    Component: ProjectDatail,
+    children: [
+      { index: true, Component: Home },
+      { path: "project", Component: Project },
+      { path: "project/:id", Component: ProjectDatail },
+    ],
   },
 ]);
 

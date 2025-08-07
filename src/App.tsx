@@ -1,7 +1,17 @@
-import Home from "./pages/Home";
+import { Outlet } from "react-router-dom";
+import Navigation from "./components/common/Navigation";
 
 function App() {
-  return <Home />;
+  return (
+    <>
+      <section className="wrapper">
+        <div className="container">
+          <Outlet />
+        </div>
+        <Navigation />
+      </section>
+    </>
+  );
 }
 
 export default App;
