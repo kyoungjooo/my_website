@@ -66,7 +66,7 @@ export const PROJECTDETAIL: Record<string, TPROJECTDETAIL> = {
     title: "신한 EZ 손해보험 보험 가입 웹 페이지",
     role: "퍼블리싱 기여도 100%",
     period: "2023.06 ~ 2023.11 ",
-    source: "assets/images/project/ez.mp4",
+    source: "/my_website/assets/images/project/ez.mp4",
     detail:
       "기아멤버스, 현대캐피탈, 신한 SOL 등 다양한 채널에서 운영된 이벤트성 보험 가입 페이지로, 현재는 서비스가 종료된 프로젝트입니다. 모바일 및 데스크탑 환경에 대응하는 반응형 웹 퍼블리싱과 다양한 브라우저에서 일관된 UI/UX를 구현하기 위한 크로스 브라우징 작업을 담당했습니다.",
     works: [
@@ -81,7 +81,7 @@ export const PROJECTDETAIL: Record<string, TPROJECTDETAIL> = {
     title: "신한라이프 스마트보장분석 개발고도화",
     role: "퍼블리싱 기여도 PC, mobile 100%, tablet 일부",
     period: "2024.01 ~ 2024.07",
-    source: "assets/images/project/life.mp4",
+    source: "/my_website/assets/images/project/life.mp4",
     detail:
       "보험 설계사 FC 전용 고객 관리 및 상품 조회 웹페이지의 반응형 UI(모바일, 태블릿, 데스크탑)를 구현하였으며, 퍼블리싱부터 사용자 인터랙션을 포함한 동적 기능까지 대부분의 화면 개발을 담당했습니다. 애자일 방식으로 기획자, 디자이너, 개발자와 협업을 통해 비즈니스 요구사항이 수시로 바뀌는 환경에서도 일정 내 안정적으로 기능을 구현해 프로젝트의 완성도를 높였습니다.",
     works: [
@@ -95,7 +95,7 @@ export const PROJECTDETAIL: Record<string, TPROJECTDETAIL> = {
     title: "널리 (Neurly)",
     role: "퍼블리싱 기여도 100%, 프론트개발",
     period: "2025.05",
-    source: "assets/images/project/neurly.mp4",
+    source: "/my_website/assets/images/project/neurly.mp4",
     detail:
       "기획자, 디자이너, 개발자가 협업하여 진행한 웹 프로젝트로, 대선 후보자의 핵심 공약을 정리하여 전달하고 사용자가 밈 기반 공유 기능을 통해 친구들과 쉽게 공약을 공유할 수 있도록 기획되었습니다.",
     works: [
