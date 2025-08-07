@@ -4,16 +4,20 @@ import Home from "../pages/Home";
 import Project from "../pages/Project";
 import ProjectDatail from "../pages/ProjectDetail";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      Component: App,
+      children: [
+        { index: true, Component: Home },
+        { path: "project", Component: Project },
+        { path: "project/:id", Component: ProjectDatail },
+      ],
+    },
+  ],
   {
-    path: "/",
-    Component: App,
-    children: [
-      { index: true, Component: Home },
-      { path: "project", Component: Project },
-      { path: "project/:id", Component: ProjectDatail },
-    ],
-  },
-]);
-
+    basename: "/my_website",
+  }
+);
 export default router;
