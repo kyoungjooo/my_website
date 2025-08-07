@@ -27,6 +27,7 @@ export default function ProjectDetail() {
               src={source}
               autoPlay
               muted
+              playsInline
               preload="auto"
               controls
             />
