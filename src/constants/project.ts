@@ -51,6 +51,13 @@ export const PROJECTLIST = [
     slug: "neurly",
     tab: "Side Project",
   },
+  {
+    title: "모바일 간편결제 애플리케이션 사용성 평가 연구",
+    skills: [],
+    image: "/assets/images/project/research.png",
+    slug: "research",
+    tab: "Side Project",
+  },
 ];
 
 //프로젝트 상세 페이지
@@ -86,7 +93,7 @@ export const PROJECTDETAIL: Record<string, TPROJECTDETAIL> = {
   },
   neurly: {
     title: "널리 (Neurly)",
-    role: "퍼블리싱 기여도 100%, 프론트 개발",
+    role: "퍼블리싱 기여도 100%, 프론트개발",
     period: "2025.05",
     source: "/assets/images/project/neurly.mp4",
     detail:
@@ -100,5 +107,17 @@ export const PROJECTDETAIL: Record<string, TPROJECTDETAIL> = {
       "API 연동 및 비동기 처리 로직 구현",
     ],
     live: "https://leginote.net/",
+  },
+  research: {
+    title: "모바일 간편결제 애플리케이션 사용성 평가 연구",
+    role: "KCI 등재 / 한국디지털정책학회 디지털융복합연구",
+    period: "2018",
+    source: "",
+    detail:
+      "사용자 대상의 웹 접근성 및 UI 적합성 개선을 위한 연구로, 모바일 앱카드 애플리케이션 사용자들의 편의성과 만족도 증진을 위해 필요한 사항을 도출해 향후 간편결제 앱 설계 시 고려해야 할 UI/UX 원칙과 방향성에 대해 제안했습니다",
+    works: [
+      "실제 사용자 대상의 정성적 인터뷰 및 사용성 테스트를 통해 사용자 관점에서 화면 흐름, 정보 구조, 인터랙션 피드백 등을 비교 분석",
+    ],
+    live: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE08852006",
   },
 };

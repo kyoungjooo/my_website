@@ -21,14 +21,17 @@ export default function ProjectDetail() {
               <span className="period">{period}</span>
             </div>
           </div>
-          <video
-            className="w-full"
-            src={source}
-            autoPlay
-            muted
-            preload="auto"
-            controls
-          />
+          {source && (
+            <video
+              className="w-full"
+              src={source}
+              autoPlay
+              muted
+              preload="auto"
+              controls
+            />
+          )}
+          {!source && <div className="py-24" />}
           <div className="project-detail__desc px-24">
             <div className="detail">
               <span className="title bold">Description.</span>
