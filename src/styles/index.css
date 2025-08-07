@@ -181,6 +181,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 8px;
+  cursor: pointer;
 }
 .main-card__header .title {
   display: flex;
@@ -220,6 +221,20 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.main-card__inner.is-collapsed .main-card__header .toggle::before {
+  transform: translate(-50%, -50%) scaleY(-1);
+}
+.main-card__inner.is-collapsed .main-card__collapsible {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+.main-card__collapsible {
+  transition: all 0.5s ease;
+  max-height: 500px;
+  opacity: 1;
+}
+
 .main-card__content {
   padding: 48px;
   aspect-ratio: 1.5 / 1;

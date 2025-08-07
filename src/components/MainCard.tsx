@@ -11,6 +11,7 @@ export default function MainCard() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const currentProject = PROJECTS[currentProjectIndex];
   const imageList = currentProject.image;
+  const [isContentOpen, setIsContentOpen] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -27,31 +28,41 @@ export default function MainCard() {
     return () => clearInterval(interval);
   }, [currentProjectIndex, imageList.length]);
 
+  const handleToggleContent = () => setIsContentOpen((prev) => !prev);
+
   return (
     <Card>
       <div className="main-card">
-        <div className="main-card__inner">
-          <header className="main-card__header">
+        <div
+          className={`main-card__inner ${isContentOpen ? "" : "is-collapsed"}`}
+        >
+          <header className="main-card__header" onClick={handleToggleContent}>
             <span className="title">Project</span>
             <button className="toggle">
               <span className="sr-only">더보기</span>
             </button>
           </header>
-          <div
-            className="main-card__content flex-center"
-            onClick={handleGoToProjectList}
-          >
-            <img src={imageList[currentImageIndex]} alt="" className="h-full" />
-          </div>
-          <footer className="main-card__footer">
-            <span className="name">{currentProject.name}</span>
-            <div>
-              <span className="count">
-                {currentProjectIndex + 1} / {PROJECTS.length}
-              </span>
-              <Button text="see all work" onClick={handleGoToProjectList} />
+          <div className="main-card__collapsible">
+            <div
+              className="main-card__content flex-center"
+              onClick={handleGoToProjectList}
+            >
+              <img
+                src={imageList[currentImageIndex]}
+                alt=""
+                className="h-full"
+              />
             </div>
-          </footer>
+            <footer className="main-card__footer">
+              <span className="name">{currentProject.name}</span>
+              <div>
+                <span className="count">
+                  {currentProjectIndex + 1} / {PROJECTS.length}
+                </span>
+                <Button text="see all work" onClick={handleGoToProjectList} />
+              </div>
+            </footer>
+          </div>
         </div>
       </div>
     </Card>
