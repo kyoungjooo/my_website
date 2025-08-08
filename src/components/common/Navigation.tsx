@@ -7,7 +7,6 @@ export default function Navigation() {
             <li className="navigation__link-item">
               <a href="mailto:leekjoo1008@gmail.com">LEEKJOO1008@GMAIL.COM</a>
             </li>
-
             <li className="navigation__link-item">
               <a
                 href="https://kyoungjooo.github.io/"

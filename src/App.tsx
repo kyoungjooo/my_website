@@ -3,14 +3,12 @@ import Navigation from "./components/common/Navigation";
 
 function App() {
   return (
-    <>
-      <section className="wrapper">
-        <div className="container">
-          <Outlet />
-        </div>
-        <Navigation />
-      </section>
-    </>
+    <section className="wrapper">
+      <div className="container">
+        <Outlet />
+      </div>
+      <Navigation />
+    </section>
   );
 }
 
