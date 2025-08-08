@@ -150,23 +150,26 @@ body {
   max-width: 840px;
 }
 .navigation__inner {
-  width: 100%;
   height: 100%;
   box-sizing: border-box;
 }
-.navigation__links {
+.navigation__link {
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: space-between;
 }
-.navigation__links a {
+.navigation__link a {
   text-decoration: none;
   color: var(--black-color);
   line-height: 1;
   font-weight: 600;
 }
-
+.navigation__link-items {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 /* Home ----- MainCard */
 .main-card {
   padding: 12px;

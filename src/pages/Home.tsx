@@ -1,5 +1,9 @@
 import MainCard from "../components/MainCard";
 
 export default function Home() {
-  return <MainCard />;
+  return (
+    <>
+      <MainCard />;
+    </>
+  );
 }
