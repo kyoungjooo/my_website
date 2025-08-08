@@ -49,7 +49,9 @@ export default function MainCard() {
             >
               <img
                 src={imageList[currentImageIndex]}
-                alt=""
+                alt={`${currentProject.name} 프로젝트 이미지 ${
+                  currentImageIndex + 1
+                }`}
                 className="h-full"
               />
             </div>

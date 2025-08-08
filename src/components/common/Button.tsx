@@ -4,7 +4,7 @@ type BtnProps = {
 
 export default function Button({ text, className, ...props }: BtnProps) {
   return (
-    <button {...props} className={`btn-base ${className}`}>
+    <button {...props} type="button" className={`btn-base ${className}`}>
       {text}
     </button>
   );

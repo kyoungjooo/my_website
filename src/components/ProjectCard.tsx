@@ -32,7 +32,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </ul>
           </div>
           <div className="project-card__image-wrapper flex-center p-48">
-            <img src={image} alt="" className="h-full" />
+            <img src={image} alt={`title 프로젝트 이미지`} className="h-full" />
           </div>
 
           <div className="project-card__footer">

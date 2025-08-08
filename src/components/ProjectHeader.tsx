@@ -6,7 +6,7 @@ type ProjectHeaderProps = {
   currentTab: string;
   setCurrentTab: Dispatch<SetStateAction<string>>;
 };
-const TABS = ["All", "Project", "Side Project"];
+const TABS = ["All", "Project", "Side Project"] as const;
 
 export default function ProjectHeader({
   currentTab,
@@ -39,7 +39,14 @@ export default function ProjectHeader({
               {TABS.map((tab) => {
                 const isActive = currentTab === tab;
                 const className = `tag ${isActive ? "active" : ""}`;
-                return <Button key={tab} text={tab} className={className} />;
+                return (
+                  <Button
+                    key={tab}
+                    role="tab"
+                    text={tab}
+                    className={className}
+                  />
+                );
               })}
             </div>
           </div>
