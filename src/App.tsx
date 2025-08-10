@@ -6,8 +6,8 @@ function App() {
     <section className="wrapper">
       <div className="container">
         <Outlet />
+        <Navigation />
       </div>
-      <Navigation />
     </section>
   );
 }

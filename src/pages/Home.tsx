@@ -1,11 +1,27 @@
 import MainCard from "../components/MainCard";
-import MovingSphere from "../components/MovingSphere";
+import MovingSpheres from "../components/MovingSpheres";
+import { Canvas } from "@react-three/fiber";
 
 export default function Home() {
   return (
-    <main className="home">
+    <>
       <MainCard />
-      <MovingSphere />
-    </main>
+      <Canvas
+        style={{
+          position: "absolute",
+          inset: 0,
+          zIndex: -1,
+          pointerEvents: "none",
+        }}
+        orthographic
+        camera={{
+          zoom: 60,
+          position: [0, 0, 100],
+        }}
+      >
+        <color attach="background" args={["white"]} />
+        <MovingSpheres />
+      </Canvas>
+    </>
   );
 }
