@@ -8,7 +8,8 @@ export default function ProjectDetail() {
   }
 
   const currentProject = PROJECTDETAIL[id];
-  const { title, role, period, source, detail, works, live } = currentProject;
+  const { title, role, period, source, poster, detail, works, live } =
+    currentProject;
 
   return (
     <>
@@ -30,6 +31,7 @@ export default function ProjectDetail() {
               playsInline
               preload="auto"
               controls
+              poster={poster}
             />
           )}
           {!source && <div className="py-24" />}
