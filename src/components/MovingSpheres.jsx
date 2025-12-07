@@ -5,11 +5,11 @@ import * as THREE from "three";
 export default function MovingSpheres() {
   const ballRadius = 0.5; //공 반지름
   const posLimit = 5 - ballRadius; // 공이 움직일 수 있는 좌표 범위의 한계치
-  const groupRef = useRef<THREE.Group>(null); // 공 Group 참조 ref
+  const groupRef = useRef(null); // 공 Group 참조 ref
   const { viewport } = useThree();
-  const posVectors: THREE.Vector3[] = []; //현재 위치 저장
-  const targetVectors: THREE.Vector3[] = []; //공이 이동해야 할 목표 위치 저장
-  const ballToTargetVectors: THREE.Vector3[] = []; //현재에서 목표까지 이동해야 할 벡터
+  const posVectors = []; //현재 위치 저장
+  const targetVectors = []; //공이 이동해야 할 목표 위치 저장
+  const ballToTargetVectors = []; //현재에서 목표까지 이동해야 할 벡터
   const ballCount = 10;
   const speed = 0.02;
   for (let i = 0; i < ballCount; i++) {
@@ -44,7 +44,7 @@ export default function MovingSpheres() {
   const bottomBox = center.y - size.y * ballRadius;
   const topBox = center.y + size.y * ballRadius;
 
-  function checkEdge(pos: THREE.Vector3, dirVec: THREE.Vector3) {
+  function checkEdge(pos, dirVec) {
     if (pos.x - ballRadius < leftBox || pos.x + ballRadius > rightBox) {
       dirVec.x = -dirVec.x;
     }
