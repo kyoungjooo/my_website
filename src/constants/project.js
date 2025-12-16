@@ -63,6 +63,15 @@ export const PROJECTLIST = [
     href: "https://ecatalog.rgbcom.kr/SHINSUNG_sbm/#/en/cover",
   },
   {
+    title: "덴탈케어 제출용 영문 홈페이지",
+    skills: ["HTML", "CSS", "JavaScript(ES6+)"],
+    image: "assets/images/project/dentalcare.png",
+    tab: "Project",
+    role: "퍼블리싱 기여도 PC 80%, mobile 100%",
+    period: "7일",
+    href: "https://web.rgbcom.kr/DENTALCARE_sbm/en/",
+  },
+  {
     title: "신한라이프 스마트보장분석 개발고도화",
     skills: ["HTML", "CSS", "JavaScript(ES6+)"],
     image: "assets/images/project/life.png",
