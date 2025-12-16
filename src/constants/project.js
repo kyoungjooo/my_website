@@ -51,7 +51,7 @@ export const PROJECTLIST = [
     tab: "Project",
     role: "퍼블리싱 기여도 PC, mobile 100%",
     period: "4일",
-    href: "https://ecatalog.rgbcom.kr/SHINSUNG_sbm/#/en/cover",
+    href: "https://www.ecatalog.rgbcom.kr/HANBIT_sbm/#/en/cover",
   },
   {
     title: "신성 실리콘 전자 카탈로그",
