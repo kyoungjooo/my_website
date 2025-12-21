@@ -32,7 +32,6 @@ export const PROJECTLIST = [
     image: "assets/images/project/kna.png",
     tab: "Project",
     role: "퍼블리싱 기여도 100%",
-    period: "4일",
     href: "https://www.ecatalog.rgbcom.kr/KNA_2025/#/en/cover",
   },
   {
@@ -41,7 +40,6 @@ export const PROJECTLIST = [
     image: "assets/images/project/golfzone.png",
     tab: "Project",
     role: "퍼블리싱 기여도 100%",
-    period: "3일",
     href: "https://www.web.rgbcom.kr/GOLFZONE/ko/",
   },
   {
@@ -50,7 +48,6 @@ export const PROJECTLIST = [
     image: "assets/images/project/hanbit.png",
     tab: "Project",
     role: "퍼블리싱 기여도 PC, mobile 100%",
-    period: "4일",
     href: "https://www.ecatalog.rgbcom.kr/HANBIT_sbm/#/en/cover",
   },
   {
@@ -59,7 +56,6 @@ export const PROJECTLIST = [
     image: "assets/images/project/shinsung.png",
     tab: "Project",
     role: "퍼블리싱 기여도 100%",
-    period: "4일",
     href: "https://ecatalog.rgbcom.kr/SHINSUNG_sbm/#/en/cover",
   },
   {
@@ -68,8 +64,7 @@ export const PROJECTLIST = [
     image: "assets/images/project/dentalcare.png",
     tab: "Project",
     role: "퍼블리싱 기여도 PC 80%, mobile 100%",
-    period: "7일",
-    href: "https://web.rgbcom.kr/DENTALCARE_sbm/en/",
+    href: "https://www.web.rgbcom.kr/DENTALCARE/en",
   },
   {
     title: "신한라이프 스마트보장분석 개발고도화",

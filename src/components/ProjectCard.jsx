@@ -21,7 +21,7 @@ export default function ProjectCard({ project }) {
                 ))}
               </ul>
               <span className="role">{role} </span>
-              <span className="period">제작 기간: {period}</span>
+              {period && <span className="period">제작 기간: {period}</span>}
             </div>
             <div className="project-card__image-wrapper flex-center p-48">
               <img
