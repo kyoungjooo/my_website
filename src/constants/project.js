@@ -67,6 +67,14 @@ export const PROJECTLIST = [
     href: "https://www.web.rgbcom.kr/DENTALCARE/en",
   },
   {
+    title: "세이브 더 버니즈",
+    skills: ["Next.js", "tailwind CSS"],
+    image: "assets/images/project/savethebunnies.png",
+    tab: "Project",
+    role: "디자인, 퍼블리싱, 개발",
+    href: "https://savethebunnies.kr",
+  },
+  {
     title: "신한라이프 스마트보장분석 개발고도화",
     skills: ["HTML", "CSS", "JavaScript(ES6+)"],
     image: "assets/images/project/life.png",
