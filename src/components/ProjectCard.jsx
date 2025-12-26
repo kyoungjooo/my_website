@@ -1,7 +1,7 @@
 import Button from "./common/Button";
 
 export default function ProjectCard({ project }) {
-  const { title, skills, image, href, role, period } = project;
+  const { title, skills, image, href, role, period, alt } = project;
 
   return (
     <article className="card">
@@ -24,11 +24,7 @@ export default function ProjectCard({ project }) {
               {period && <span className="period">제작 기간: {period}</span>}
             </div>
             <div className="project-card__image-wrapper flex-center p-48">
-              <img
-                src={image}
-                alt={`title 프로젝트 이미지`}
-                className="h-full"
-              />
+              <img src={image} alt={alt} className="h-full" />
             </div>
 
             <div className="project-card__footer">
